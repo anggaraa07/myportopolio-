@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Yogi Anggara - Web Developer dengan minat pada Frontend, Tailwind, dan teknologi digital." />
+  <meta name="author" content="Yogi Anggara" />
+  <title>Yogi Anggara - Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  
+ <!-- Foto Profil --> 
+  <div class="relative flexjustify-center items-center mb-10">
+  
+  <!-- Background glow -->
+  <div class="absolute w-40 h-40 bg-gradient-to-tr from-blue-500 to-purple-600 blur-2xl opacity-30 rounded-full z-0"></div>
+  
+    <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+      20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+    .animate-shake {
+      animation: shake 0.5s ease-in-out;
+    }
+  
+  
+  <style>
+  /* Border pulse (pelan & lembut) */
+  @keyframes borderPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+  }
+
+  .animate-borderPulse {
+    animation: borderPulse 3s infinite ease-in-out;
+  }
+
+  /* Getaran cepat */
+  @keyframes shakeFast {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-2px); }
+    40% { transform: translateX(2px); }
+    60% { transform: translateX(-2px); }
+    80% { transform: translateX(2px); }
+  }
+
+  .group-hover\:animate-shakeFast:hover {
+    animation: shakeFast 0.3s linear;
+  }
+</style>
+  
+  <style>
+  @keyframes pulseSlow {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  .animate-pulse-slow {
+    animation: pulseSlow 1.5s infinite;
+  }
+</style>
+  
+  </style>
+</head>
+<body class="scroll-smooth transition-colors duration-500 text-gray-900 bg-gray-100 dark:text-white dark:bg-gray-900">
+  <h1 class="sr-only">Portofolio Yogi Anggara - Web Developer</h1>  
+  
+  <!-- Navbar --> 
+  <nav class="bg-gray-800 dark:bg-gray-950 text-white shadow border-b border-gray-600 dark:border-gray-700">  
+  <div class="max-w-6xl mx-auto px-4">  
+    <div class="flex justify-between items-center h-16">  
+      <div class="text-xl font-bold">Yogi Anggara</div>  
+      <div class="flex items-center gap-4">  
+        <button id="darkToggle"><i data-lucide="moon" class="w-5 h-5"></i></button>  
+        <button id="menu-btn" class="md:hidden"><i data-lucide="menu" class="w-6 h-6"></i></button>  
+      </div>  
+      <div id="menu" class="hidden md:flex space-x-6 text-sm font-medium">  
+        <a href="#about" class="hover:text-gray-300">Tentang</a>  
+        <a href="#goals" class="hover:text-gray-300">Tujuan Karier</a>          
+        <a href="#skills" class="hover:text-gray-300">Tools</a>  
+        <a href="#experience" class="hover:text-gray-300">Pengalaman</a>  
+        <a href="#lisensi" class="hover:text-gray-300">Lisensi</a>  
+        <a href="#projects" class="hover:text-gray-300">Preview project</a>  
+        <a href="#hobbies" class="hover:text-gray-300">Hobby</a>  
+        <a href="#hubungi saya" class="hover:text-gray-300">Hubungi Saya</a>  
+      </div>  
+    </div>  
+  </div>  
+ <div id="mobile-menu" class="md:hidden hidden flex-col item-center text-center gap-2 bg-gray-800 dark:bg-gray-900 p-4 rounded shadow-lg mt-2 transition-all duration-500 ease-in-out transform scale-95 opacity-0">  
+  <a href="#about" class="block py-2 text-white hover:text-blue-400 transition">Tentang</a>  
+   <a href="#goals" class="block py-2 text-white hover:text-blue-400 transition">Tujuan Karier</a>  
+  <a href="#skills" class="block py-2 text-white hover:text-blue-400 transition">Tools</a>  
+  <a href="#experience" class="block py-2 text-white hover:text-blue-400 transition">Pengalaman</a>  
+   <a href="#lisensi" class="block py-2 text-white hover:text-blue-400 transition">Lisensi</a>  
+   <a href="#projects" class="block py-2 text-white hover:text-blue-400 transition">Preview Project</a>  
+  <a href="#hobbies" class="block py-2 text-white hover:text-blue-400 transition">Hobby</a>  
+  <a href="#hubungisaya" class="block py-2 text-white hover:text-blue-400 transition">Hubungi Saya</a>  
+</div>  
+</nav>   
+  
+  <!-- Foto Profil --> 
+  <div class="flex justify-center items-center mt-6">
+  <div class="animate-spin-slow rounded-full border-4 border-dashed border-blue-400 w-40 h-40 flex items-center justify-center">
+    <img src="https://i.postimg.cc/2bT66Sty/IMG-20250704-184454.jpg" 
+      class="w-28 h-28 rounded-full object-cover shadow-lg border-2 border-white dark:border-gray-800" />
+  </div>
+</div>
+  
+  <!-- Header -->  
+  <header class="text-center py-10 bg-gray-200 dark:bg-gray-800">  
+  <p class="mt-2 italic">~ Teknologi Bukan Sekedar Alat tapi Solusi ..</p>  
+  <div class="text-center mt-6">  
+   <a href="cv.html" target="_blank"
+  class="relative inline-block px-6 py-3 rounded-full bg-blue-600 text-white font-medium transition-all duration-300 ease-in-out overflow-hidden group">
+  <span class="absolute inset-0 rounded-full border-2 border-white animate-borderPulse group-hover:animate-shakeFast"></span>
+  <span class="relative z-10">📄 Download CV</span>
+</a>
+  </div>  
+</header> 
+  <!-- Content --> 
+  <div class="max-w-4xl mx-auto p-6 space-y-12">  
+  <section id="about" class="text-center" data-aos="zoom-in">     
+    <h2 class="inline-block bg-orange-500 hover:bg-black-600 text-white px-6 py-2 rounded-full shadow transition">  
+        🪪 Tentang Saya      
+      <h2 class="text-xl font-semibold mb-2 underline underline-offset-4 decoration-white-500"></h2>    
+        <p class="max-w-2xl mx-auto">      
+      Saya <strong>Yogi Anggara</strong>, Lulusan Teknik Informatika yang disiplin, cepat belajar, dan memiliki semangat tinggi dalam dunia teknologi.  
+      Saya memiliki minat besar di bidang pengembangan web serta siap berkontribusi dalam tim maupun secara mandiri.  
+      Bagi saya, teknologi bukan sekadar alat, tetapi solusi untuk masa depan.  
+    </p>  
+  </section>  
+    
+    <section id="goals" class="text-center" data-aos="fade-up">
+  <h2 class="inline-block bg-orange-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition">
+    🎯 Tujuan Karier
+  </h2>
+  <h2 class="text-xl font-semibold mb-2 underline underline-offset-4 decoration-white-500"></h2>
+  <p class="max-w-2xl mx-auto mt-4">
+    Saya memiliki tujuan untuk menjadi seorang profesional di bidang teknologi informasi, khususnya dalam pengembangan web dan aplikasi. 
+    Saya ingin terus belajar dan berkembang bersama tim yang inovatif, serta memberikan solusi digital yang bermanfaat bagi masyarakat. 
+    Komitmen saya adalah menciptakan karya yang tidak hanya fungsional, tetapi juga bernilai estetika dan berdampak positif.    
+    <img src="https://i.postimg.cc/t4ftVJ0t/images-3.jpg">
+  </p>
+</section>
+    
+    <section id="skills" class="text-center" data-aos="zoom-in">  
+     <h2 class="inline-block bg-orange-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition">  
+        🖥️ Tools Saya  
+   <h2 class="text-xl font-semibold mb-2 underline underline-offset-4 decoration-white-500"></h2>   
+    <ul class="list-disc list-inside inline-block text-left">  
+      <li>HTML5</li>  
+      <li>CSS</li>  
+      <li>Javascript</li>  
+      <li>Tailwind</li>  
+      <li>Microsoft Office</li><br>  
+      <img src="https://i.postimg.cc/MT91pZyV/images-2.jpg">  
+    </ul>  
+  </section>  
+      
+      <section id="experience" class="text-center" data-aos="zoom-in">  
+    <h2 class="inline-block bg-orange-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition">  
+        🧑‍💻 Pengalaman Magang  
+    <h2 class="text-xl font-semibold mb-2 underline underline-offset-4 decoration-white-500"></h2>   
+    <p>Sekretariat Daerah (SETDA) Kab. Seluma, Kota Bengkulu</p>  
+    <p>(Desember 2021 to February 2022)</p>-  
+    <img src="https://i.postimg.cc/zGQ62W3H/IMG-20250704-184454.jpg"  
+         alt="Pengalaman Magang"  
+         class="mx-auto mt-4 max-w-md w-full rounded shadow" />  
+  </section>      
+          
+        <section id="lisensi" class="text-center" data-aos="zoom-in">  
+          <h2 class="inline-block bg-orange-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition">
+    📜 Lisensi
+  <h2 class="text-xl font-semibold mb-2 underline underline-offset-4 decoration-white-500"></h2>
+            <div class="mt-4 space-y-4">
+             <img src="https://i.postimg.cc/cLHKqt17/disiniann1.gif alt="Animasi" width="200" style="display: block;margin: 0 auto;">              
+   <!-- Gambar sertifikat -->
+    <section id="lisensi" class="py-12 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
+    <a href="https://i.postimg.cc/Ghy9LxPQ/SERTIFIKAT.jpg" target="_blank"      
+    class="w-full max-w-2xl mx-auto italic rounded shadow-lg">
+    <span class="text-blue-600 underlined cursor-pointer hover:text-orange-600 relative z-10">📄 <u>TOEFL Certificate</u> </span>
+  </a>      
+    <br><br>
+      
+    <!-- Tambah sertifikat lain di sini -->
+     <a href="https://i.postimg.cc/K8GgfsgY/MS-OFFICE.jpg" target="_blank"
+      class="w-full max-w-2xl mx-auto italic rounded shadow-lg">
+    <span class="text-blue-600 underlined cursor-pointer hover:text-orange-600 relative z-10">📄 <u>Microsoft Office Training</u></span>
+  </a>      
+    <br><br>
+    <!-- Tambah sertifikat lain di sini -->
+     <a href="https://i.postimg.cc/PxgwMXmG/ARTIKEL.jpg" target="_blank"
+      class="w-full max-w-2xl mx-auto italic rounded shadow-lg">
+    <span class="text-blue-600 underlined cursor-pointer hover:text-orange-600 relative z-10">📄 <u>Article Publication</u></span>
+  </a>   
+    
+    <!-- <img src="..." alt="Sertifikat 2" class="..."/> -->
+  </div></section>
+</section>
+        <br><br>
+        
+        <section id="projects" class="text-center" data-aos="zoom-in">  
+     <h2 class="inline-block bg-orange-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition">  
+        🛠️ Preview Project  
+       <h2 class="text-xl font-semibold mb-2 underline underline-offset-4 decoration-white-500"></h2>  
+    <p>-</p>  
+    <img src="https://i.postimg.cc/tJRnKKwJ/images.png"alt="Project"  
+         class="mx-auto mt-4 max-w-md w-full rounded shadow" />  
+    <br>  
+    <img src="https://i.postimg.cc/Dw1fcCpM/images-1.png"alt="Project"     
+  </section>  
+    <br><br>  
+       <section id="hobbies" class="text-center" data-aos="zoom-in">  
+     <h2 class="inline-block bg-orange-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition">  
+        🎯 Hobby  
+   <h2 class="text-xl font-semibold mb-2 underline underline-offset-4 decoration-white-500"></h2>    
+    <p>Mendaki Gunung (HIKING), Survival</p>  
+    <img src="https://i.postimg.cc/g2Lsth35/1000000136-01.jpg"  
+         alt="Foto Hobi"  
+         class="mx-auto rounded-lg shadow-lg max-w-xs mt-4" />
+       <p class="text-sm italic text-gray-500 dark:text-gray-400">Ilustrasi Gn. Dempo,<br>
+         Pagaralam, South Sumatra </p>
+
+     </section>  
+</div><br>  
+       
+       <!-- Footer -->  <p>  
+   <footer class="text-center py-8 bg-gray-200 dark:bg-gray-800 text-sm">
+
+  <section id="hubungisaya" class="px-4 py-8 md:px-0 text-center" data-aos="fade-up">  
+     <h2 class="inline-block bg-orange-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition">  
+        🔗 Hubungi Saya         
+       <h2 class="text-xl font-semibold mb-4 underline underline-offset-4 decoration-white-500"></h2>  
+       <br>  
+    <!-- Tombol langsung -->  
+    <div class="space-y-4 mb-8">  
+      <a href="mailto:anggarayogi407@gmail.com"  
+         class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full shadow transition">  
+        📧 Kirim Email  
+      </a><br>  
+      <a href="https://wa.me/6289520836091"  
+         target="_blank"  
+         class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition">  
+        💬 via WhatsApp  
+      </a>  
+    </div></p>  
+    
+   <!-- Form Kontak -->
+<form id="kontakForm" class="w-full max-w-lg mx-auto space-y-4 text-left">
+  <div>
+    <label for="user_name" class="block text-sm font-medium">Nama</label>
+    <input type="text" id="user_name" name="user_name" required
+      class="w-full mt-1 px-3 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded shadow-sm focus:outline-none focus:ring focus:border-blue-500" />
+  </div>
+  <div>
+    <label for="user_email" class="block text-sm font-medium">Email</label>
+    <input type="email" id="user_email" name="user_email" required
+      class="w-full mt-1 px-3 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded shadow-sm focus:outline-none focus:ring focus:border-blue-500" />
+  </div>
+  <div>
+    <label for="message" class="block text-sm font-medium">Pesan</label>
+    <textarea id="message" name="message" rows="4" required
+      class="w-full mt-1 px-3 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded shadow-sm focus:outline-none focus:ring focus:border-blue-500"></textarea>
+  </div>
+  <div class="text-center">
+    <button type="submit"
+      class="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded shadow transition">
+      Kirim Pesan
+    </button>
+  </div>
+</form>
+
+  </section>  <!-- Link Sosial Media dengan Tooltip -->
+
+<div class="flex justify-center space-x-6 mt-6" id="sosmed">  <a href="t.me/Anggarayogi" title="Facebook saya"  
+class="text-white-600 hover:text-blue-700">
+<i data-lucide="facebook" class="w-6 h-6"></i>
+</a>
+<a href="https://www.instagram.com/_anggarayogi?igsh=YWZnM201NGJ0MGgz" target="_blank" title="Instagram saya"  
+class="text-white-500 hover:text-pink-600">
+<i data-lucide="instagram" class="w-6 h-6"></i>
+</a>
+<a href="https://github.com/anggaraa07" target="_blank" title="Github saya"  
+class="text-white-800 hover:text-blue-900">
+<i data-lucide="Github" class="w-6 h-6"></i>
+</a>
+
+</div>  
+    <br>  
+  <p class="mt-6 text-gray-400 dark:text-gray-400"><i>Created by</i>_<strong>Anggara Y</strong></a>.&copy; 2025</p>  
+</footer>  
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init();
+    lucide.createIcons();
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (menuBtn && menu) {
+      menuBtn.addEventListener('click', () => {
+        // Efek getar
+        menuBtn.classList.add('animate-shake');
+        setTimeout(() => menuBtn.classList.remove('animate-shake'), 300);
+
+        // Animasi buka/tutup menu
+        if (menu.classList.contains('opacity-0')) {
+          menu.classList.remove('hidden');
+          setTimeout(() => {
+            menu.classList.remove('opacity-0', 'scale-95');
+            menu.classList.add('opacity-100', 'scale-100');
+          }, 10);
+        } else {
+          menu.classList.remove('opacity-100', 'scale-100');
+          menu.classList.add('opacity-0', 'scale-95');
+          setTimeout(() => menu.classList.add('hidden'), 300);
+        }
+
+        // Ganti ikon menu <-> x
+        const icon = menuBtn.querySelector('i');
+        const isOpen = icon.getAttribute('data-lucide') === 'menu';
+        icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+        lucide.createIcons();
+      });
+    }
+
+    // Toggle dark mode
+    const darkToggle = document.getElementById('darkToggle');
+    const icon = darkToggle?.querySelector('i');
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if ((savedTheme === 'dark') || (!savedTheme && prefersDark)) {
+      document.documentElement.classList.add('dark');
+      icon?.setAttribute('data-lucide', 'sun');
+    } else {
+      document.documentElement.classList.remove('dark');
+      icon?.setAttribute('data-lucide', 'moon');
+    }
+
+    darkToggle?.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      icon?.setAttribute('data-lucide', isDark ? 'sun' : 'moon');
+      lucide.createIcons();
+    });
+  });
+       
+  
+</script> 
+       
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("YOUR_PUBLIC_KEY"); // Ganti dengan Public Key dari EmailJS
+  })();
+
+  document.getElementById("kontakForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_8wepevh", "template_kcsyqf8", this)
+      .then(function () {
+        alert("Pesan berhasil dikirim!");
+        document.getElementById("kontakForm").reset();
+      }, function (error) {
+        console.log("Gagal mengirim pesan:", error);
+        alert("Gagal mengirim pesan. Silakan cek kembali konfigurasi.");
+      });
+  });
+</script>
+    
+      </body>
+</html>
+  
